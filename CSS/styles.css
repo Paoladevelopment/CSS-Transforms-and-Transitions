@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-font: "Oswald";
+  --secundary-font: "Source Sans Pro";
+  --fw-bold: 700;
+  --fw-normal: 400;
+  --white-main-color: #fff;
+}
+
+/* Responsive design */
+body {
+  font-family: var(--main-font);
+  font-weight: var(--fw-normal);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: var(--fw-bold);
+  line-height: 4rem;
+  color: var(--white-main-color);
+  margin-bottom: 2.6rem;
+}
+
+nav {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Hero styling goes here */
+.hero-header {
+  background: url("../assets/background-image-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-main {
+  display: flex;
+  margin-bottom: 12.625rem;
+  padding: 3.56rem 1rem 0 1.5rem;
+  justify-content: space-between;
+}
+
+.header-main a {
+  color: var(--white-main-color);
+  font-family: var(--secundary-font);
+  font-weight: 600;
+  font-size: 1.25rem;
+  font-style: normal;
+  line-height: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.lines-3 {
+  padding-top: 0.5rem;
+  align-self: center;
+}
+
+.lines-3 hr {
+  border: none;
+  width: 1.375rem;
+  height: 2px;
+  margin-bottom: 0.2rem;
+  background-color: var(--white-main-color);
+}
+
+.hero-block h2 {
+  font-size: 1.5rem;
+  font-family: var(--secundary-font);
+  font-weight: var(--fw-normal);
+  font-style: normal;
+  line-height: 2rem;
+  padding-bottom: 15.38rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main-sec {
+  padding-top: 4.0625rem;
+  background: #e5e5e5;
+}
+
+.main-sec h2 {
+  font-style: normal;
+  font-size: 3rem;
+  font-weight: var(--fw-bold);
+  line-height: 4rem;
+  color: #464547;
+  margin: 0 3.875rem 2.5625rem;
+  text-align: left;
+}
+
+.main-sec span::after {
+  content: "\a";
+  display: block;
+}
+
+.main-sec h3 {
+  font-family: var(--secundary-font);
+  font-weight: var(--fw-normal);
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #666666;
+  margin-bottom: 1.75rem;
+  margin-left: 3.875rem;
+  text-align: left;
+}
+
+.main-sec p {
+  font-family: var(--secundary-font);
+  font-weight: var(--fw-normal);
+  font-size: 1rem;
+  line-height: 1.375rem;
+  color: #666666;
+  margin-left: 3.875rem;
+  margin-right: 1.5rem;
+  text-align: left;
+}
+
+.main-sec p + p {
+  margin-top: 1.5rem;
+  margin-bottom: 1.81rem;
+}
+
+.btn {
+  width: 7.18rem;
+  height: 2.375rem;
+  background: #55c2d8;
+  border-radius: 18px;
+  border: none;
+  margin-bottom: 7.25rem;
+  padding: 0.33rem 0 0.39rem;
+  font-family: var(--main-font);
+  font-size: 0.875rem;
+  font-weight: var(--fw-normal);
+  line-height: 1.625rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--white-main-color);
+}
+
+.learn-more {
+  background-color: rgba(140, 79, 42, 0.3);
+  background-image: url(../assets/background-image-2.jpg);
+  background-blend-mode: screen;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 4.5rem 0;
+}
+
+.learn-more h2 {
+  font-size: 3rem;
+  font-style: normal;
+  line-height: 4rem;
+  color: var(--white-main-color);
+  margin-bottom: 5.6875rem;
+  margin-left: 0.625rem;
+}
+
+.play-btn {
+  width: 6.25rem;
+  height: 6.25rem;
+  background-color: #39c2d7;
+  border: none;
+  border-radius: 50%;
+  padding: 1.5rem 2rem 1.5rem 2.5rem;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 5.125rem;
+}
+
+.learn-more h3 {
+  font-family: var(--secundary-font);
+  font-weight: var(--fw-normal);
+  font-size: 1.5rem;
+  font-style: normal;
+  line-height: 2rem;
+  color: var(--white-main-color);
+  margin-left: 2.8125rem;
+  margin-right: 2.5rem;
+}
+
+.footer {
+  background: #464547;
+  padding-top: 3.625rem;
+  padding-bottom: 4.6875rem;
+}
+
+.footer-logo {
+  margin-bottom: 1.9375rem;
+}
+
+.footer-logo span {
+  margin-left: 1rem;
+  font-family: var(--secundary-font);
+  font-weight: var(--fw-normal);
+  font-size: 1.125rem;
+  line-height: 1rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--white-main-color);
+}
+
+address > *,
+footer > p {
+  font-family: var(--secundary-font);
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+address {
+  margin-bottom: 1.1875rem;
+}
+
+@media (min-width: 768px) {
+  .lines-3 {
+    display: none;
+  }
+  nav {
+    display: block;
+    flex-grow: 2;
+    margin-left: 10.3125rem;
+  }
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+  }
+
+  .header-main nav a {
+    font-style: normal;
+    font-size: 0.875rem;
+    font-weight: var(--fw-normal);
+    line-height: 1rem;
+    letter-spacing: 0.2em;
+  }
+
+  .header-main {
+    margin-left: 6rem;
+    margin-right: 2rem;
+    max-width: 40.6875rem;
+    padding: 3.56rem 0 0;
+  }
+
+  .main-sec h2,
+  .main-sec h3 {
+    text-align: center;
+  }
+
+  .main-sec h3 {
+    margin-bottom: 2.8125rem;
+    margin-left: 0;
+  }
+
+  .main-sec p {
+    margin-left: 1.6875rem;
+    margin-right: 1.5rem;
+  }
+
+  .main-sec p:first-of-type {
+    max-width: 25.5rem;
+    margin: 0;
+  }
+
+  .main-sec p + p {
+    margin: 0;
+    max-width: 26rem;
+  }
+
+  .main-sec div {
+    display: flex;
+    gap: 5.1875rem;
+    justify-content: center;
+    margin-bottom: 3.1875rem;
+    margin-left: 2.25rem;
+    margin-right: 2rem;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-logo {
+    display: flex;
+    margin-right: 5.0625rem;
+  }
+
+  .footer-logo img {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  /* organizing flex items footer */
+  .footer p {
+    align-self: flex-end;
+    text-align: left;
+  }
+  address {
+    margin-bottom: 0;
+    margin-right: 5rem;
+  }
+
+  address a {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-main {
+    margin-left: 10rem;
+    margin-right: 18.125rem;
+    max-width: 40.6875rem;
+    padding: 3.56rem 0 0;
+  }
+
+  .main-sec div {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  address {
+    margin-right: 19.875rem;
+  }
+}
+
+/* Transitions and transforms*/
+.logo {
+  transition: transform 0.5s ease-in;
+}
+
+.logo:hover {
+  transform: rotateY(180deg) scale(1.5);
+}
+
+.btn {
+  transition: transform 1s;
+}
+
+.btn:hover {
+  transform-origin: left;
+  transform: rotateZ(10deg);
+}
+
+.play-btn {
+  transition: all 1.5s;
+}
+
+.play-btn:hover {
+  color: #39c2d7;
+  background-color: #fff;
+  transform: scale(0.9);
+}
